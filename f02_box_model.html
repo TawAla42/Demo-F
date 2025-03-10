@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Box Model</title>
+        <meta charset="utf-8">
+        <link href="f.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="grid">
+            <header class="box header">
+                <h1>layout using <abbr title="Cascading Style Sheets">CSS</abbr> Grid</h1>
+            </header>
+            <nav class="box nav">
+                <ul>
+                    <li><a href="f01_width.html">Width</a></li>
+                    <li><a href="f02_box_model.html">The Box Model</a></li>
+                    <li><a href="f03_borders.html">Borders</a></li>
+                    <li><a href="f04_css_grid.html">CSS Grid</a></li>
+                    <li><a href="f05_shadows.html">Shadows</a></li>
+                    <li><a href="f06_gradients.html">Gradients</a></li>
+                </ul>
+            </nav>
+        </div>
+            <main class="box main">
+                <h2>The 4 Boxes of the Box Model</h2>
+                <ol>
+                    <li>Content</li>
+                    <li>Paddin</li>
+                    <li>Border</li>
+                    <li>Margin</li>
+                </ol>
+
+                <h3>Content</h3>
+
+                <p>The Content box is where all of your text, pictures, links, etc. appear. That is your 'content' and it is naturally at the center of the Box Model.</p>
+                
+                <h3>Padding</h3>
+
+                <p>It can look crowded on a Web page to have different content sections right up against one another, so it is customary to add some padding - space that appears around the edges of your content. You can add the padding to each side independently (e.g., padding-left) or you can combine your padding for all four sides in a single declaration.</p>
+                
+                <h3>Border</h3>
+
+                <p>Borders are lines or other graphical markers drawn around your padding. Borders are, by default, rectangles with sharp corners, but you can use the border-radius property to round off those corners as much as you'd like. Borders can be rounded even if they are transparent, which has the effect of shaping the background color of the content and padding.</p>
+                
+                <h3>Margin</h3>
+
+                <p>Margin is like padding for the border. It is space that exists around the outside edge of the border. Unlike padding, however, margins collapse under some circumstances - specifically, vertically-stacked margins will collapse together so that only the larger of the two margins is applied. This allows us to use margin as a centering property, and one of the most common margin settings is margin: 0 auto; which will take the selected element and center it from left-to-right without affecting elements above or below it.</p>
+                <img alt="An expanded (3-dimensional) depiction of the CSS Box Model, emphasizing that the hierarchy starts with the border, then progresses to the content, then the padding, then the background image, then the background-color, and finally the margin" src="./images/f02_box_model.png">
+
+            </main>
+            <aside class=" box aside">
+
+            </aside>
+            <footer class="box footer">
+                <p>&copy;2025 by Tawhid Alam</p>
+            </footer>
+        </div>
+    </body>
+</html>

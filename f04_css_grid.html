@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Grid</title>
+        <meta charset="utf-8">
+        <link href="f.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="grid">
+            <header class="box header">
+                <h1>layout using <abbr title="Cascading Style Sheets">CSS</abbr> Grid</h1>
+            </header>
+            <nav class="box nav">
+                <ul>
+                    <li><a href="f01_width.html">Width</a></li>
+                    <li><a href="f02_box_model.html">The Box Model</a></li>
+                    <li><a href="f03_borders.html">Borders</a></li>
+                    <li><a href="f04_css_grid.html">CSS Grid</a></li>
+                    <li><a href="f05_shadows.html">Shadows</a></li>
+                    <li><a href="f06_gradients.html">Gradients</a></li>
+                </ul>
+            </nav>
+        </div>
+            <main class="box main">
+                
+                <h2>Putting Your Content in a Grid Container</h2>
+
+                <p>Before we can define a grid in CSS, we need to nest all of the content inside an id that we will attach to a div. Although we could apply these settings directly to the body, we'd limit our flexibility for changing layout down the line - all of our content would be forced to exist inside our CSS grid, whether we wanted it to or not. To avoid that situation, by default we will contain all of our grid content in a div with an id name of grid.</p>
+                
+                <h3>The Display Property</h3>
+
+                <p>In CSS, we default to displaying content in boxes. To change that, we'll invoke the display: grid; property to tell the browser that instead of stacking HTML boxes in flow sequence, we're going to place each Box Model element on a defined screen grid. This gives us tremendous control over Web page layout. That used to be more relevant a few years ago when it was still common to see complex layouts, but even in the mobile-first era of Web design we can make good use of CSS Grid.</p>
+                <img alt="a simple grid diagram showing how an HTML element looks when it is placed at specific grid coordinates" src="image/f04_grid_example/.png">
+
+                <h3>Grid Template Code</h3>
+
+                <p>It is a bit hard to make out in the screen capture below, but the Web developer in this case has five HTML sections being organized:</p>
+                <ol>
+                    <li>Header</li>
+                    <li>Login</li>
+                    <li>Section</li>
+                    <li>Main</li>
+                    <li>Footer</li>
+                </ol>
+                <p>If you study the code and compare it against the image, you should be able to see how the developer has set up three columns and four rows and used aliases to refer to the five HTML sections by a single letter each: h, l, s, m, and f. The only alias you get to see being set up in the image is the one for the Login section, where grid-area: l assigns the letter "l" to the "login" class name.</p>
+                <img alt="CSS code for defining grid template rows, columns, and areas" src="./images/f04_grid_template.jpg">
+                </main>
+                    <aside class="box aside">
+                     <h2>Alternatives to CSS Grid</h2>
+
+                     <ul>
+                        <li>HTML Flow</li>
+                        <li>Floats</li>
+                        <li>Flexbox</li>
+                     </ul>
+    
+                    <p>HTML flow is the original layout tool, before we had CSS. With HTML Flow all you can do is structure your HTML in the order you want content to appear on the finished Web page. It is limited to a single column unless you use <code>&lt;table></code> tags to mimic a grid. Overall, HTML flow is to be used only as a backup for those cases in which your CSS completely fails to load; it should never be your primary tool for layout.</p>
+                    
+                    <p>Floats were intended to replace tables, but floats struggled to support anything more than simple two-column layouts. Floats are finicky and were a bad fit for the kinds of complex Web layouts that became popular about 10 years ago.</p>
+    
+                    <p>Flexbox replaced floats (for the most part - some designers still include floats as part of their Flexbox or CSS Grid layout as a sort of hybrid design) but Flexbox really shines when you are tiling a lot of items in a group. Flexbox struggles with full-page layout control. The best designers today begin with CSS Grid and then insert Flexbox to handle a group of items within the layout.</p>
+    
+
+                    </aside> 
+                        
